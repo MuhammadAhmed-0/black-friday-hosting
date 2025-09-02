@@ -1,1 +1,1 @@
-# black-friday-hosting
+# Black Friday Hosting
