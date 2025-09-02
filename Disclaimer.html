@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer</title>
+    <style>
+        /* Base header styling */
+        header {
+            background-color: #003366;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            /* Increased padding for a larger header */
+            position: relative;
+            z-index: 10;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .logo-image {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            color: bisque;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-item {
+            margin-right: 30px;
+        }
+
+        .nav-link {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            color: bisque;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            color: #66B2FF;
+            /* Tomato color for hover effect */
+            text-shadow: none;
+        }
+
+        /* Menu Toggle Button for mobile */
+        .menu-toggle {
+            display: none;
+            font-size: 30px;
+            background: none;
+            border: none;
+            color: bisque;
+            cursor: pointer;
+        }
+
+        /* Base styling for About Us container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .disclaimer h2 {
+            text-align: center;
+            color: #003366;
+            font-size: 26px;
+        }
+
+        .disclaimer h2 {
+            color: #003366;
+            font-size: 24px;
+        }
+
+        .footer-nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        footer {
+            background-color: #003366;
+            color: bisque;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header .nav-list {
+                display: none;
+                flex-direction: column;
+            }
+
+            .menu-toggle {
+                display: inline-block;
+            }
+
+            .menu-toggle.active+.nav-list {
+                display: flex;
+            }
+
+            .disclaimer h1,
+            .disclaimer h2,
+            .disclaimer p {
+                text-align: left;
+                padding: 0 10px;
+            }
+
+            .nav-list .nav-item {
+                margin-right: 15px;
+            }
+
+            .footer-nav {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-text {
+                font-size: 16px;
+            }
+
+            .disclaimer h1 {
+                font-size: 1.8rem;
+            }
+
+            .disclaimer h2 {
+                font-size: 1.2rem;
+            }
+
+            .nav-list .nav-item {
+                margin-right: 10px;
+            }
+
+            footer p,
+            .footer-nav a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/Logo.png" alt="Logo" class="logo-image">
+                <span class="logo-text">Webhosting Advisor</span>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="black-friday-hosting-deals.html" class="nav-link">Black Friday Deals</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Main Disclaimer Section -->
+    <section class="disclaimer">
+        <div class="container">
+            <h2 style="text-align: center;">Disclaimer</h2>
+            <p>At Web Hosting Advisor, we strive to provide accurate and up-to-date information. However, the content on our website is for informational purposes only.</p>
+            <h2>Affiliate Links</h2>
+            <p>Some of the links on our website are affiliate links. This means that if you click on the link and make a purchase, we may receive a commission at no additional cost to you. These commissions help support our work and allow us to continue providing valuable content.</p>
+            <h2>Accuracy of Information</h2>
+            <p>While we make every effort to ensure the accuracy of the information on our site, we cannot guarantee that all information is always correct, complete, or up-to-date. Web Hosting Advisor is not responsible for any errors or omissions, or for the results obtained from the use of this information.</p>
+            <h2>External Links</h2>
+            <p>Our website may contain links to external websites that are not provided or maintained by Web Hosting Advisor. We do not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.</p>
+            <h2>Limitation of Liability</h2>
+            <p>In no event shall Web Hosting Advisor be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with the use of our website or the information provided. This includes, but is not limited to, any loss of profits, business interruption, or loss of data.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Web Hosting Advisor. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </nav>
+        </div>
+    </footer>
+    <script>
+        //for toggle menu
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+
+    </script>
+</body>
+
+</html>

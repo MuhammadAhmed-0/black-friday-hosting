@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer</title>
+    <style>
+        /* Base header styling */
+        header {
+            background-color: #003366;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            /* Increased padding for a larger header */
+            position: relative;
+            z-index: 10;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .logo-image {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            color: bisque;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-item {
+            margin-right: 30px;
+        }
+
+        .nav-link {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            color: bisque;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            color: #66B2FF;
+            /* Tomato color for hover effect */
+            text-shadow: none;
+        }
+
+        /* Menu Toggle Button for mobile */
+        .menu-toggle {
+            display: none;
+            font-size: 30px;
+            background: none;
+            border: none;
+            color: bisque;
+            cursor: pointer;
+        }
+
+        /* Base styling for About Us container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .disclaimer h2 {
+            text-align: center;
+            color: #003366;
+            font-size: 26px;
+        }
+
+        .disclaimer h2 {
+            color: #003366;
+            font-size: 24px;
+        }
+
+        .footer-nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        footer {
+            background-color: #003366;
+            color: bisque;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header .nav-list {
+                display: none;
+                flex-direction: column;
+            }
+
+            .menu-toggle {
+                display: inline-block;
+            }
+
+            .menu-toggle.active+.nav-list {
+                display: flex;
+            }
+
+            .disclaimer h1,
+            .disclaimer h2,
+            .disclaimer p {
+                text-align: left;
+                padding: 0 10px;
+            }
+
+            .nav-list .nav-item {
+                margin-right: 15px;
+            }
+
+            .footer-nav {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-text {
+                font-size: 16px;
+            }
+
+            .disclaimer h1 {
+                font-size: 1.8rem;
+            }
+
+            .disclaimer h2 {
+                font-size: 1.2rem;
+            }
+
+            .nav-list .nav-item {
+                margin-right: 10px;
+            }
+
+            footer p,
+            .footer-nav a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/Logo.png" alt="Logo" class="logo-image">
+                <span class="logo-text">Webhosting Advisor</span>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="black-friday-hosting-deals.html" class="nav-link">Black Friday Deals</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Main Disclaimer Section -->
+    <section class="privacy-policy">
+      <div class="container">
+          <h1>Privacy Policy</h1>
+          <p>At Web Hosting Advisor, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your information when you visit our website.</p>
+          
+          <h2>Information We Collect</h2>
+          <p>We may collect personal information such as your name, email address, and other contact details when you subscribe to our newsletter, fill out a form, or interact with our site in other ways. We also collect non-personal information such as browser type, operating system, and browsing behavior through cookies and similar technologies.</p>
+          
+          <h2>How We Use Your Information</h2>
+          <p>Your information helps us to:</p>
+          <ul>
+              <li>Provide, operate, and maintain our website</li>
+              <li>Improve, personalize, and expand our website</li>
+              <li>Understand and analyze how you use our website</li>
+              <li>Develop new products, services, features, and functionality</li>
+              <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
+              <li>Process your transactions and manage your orders</li>
+              <li>Send you emails</li>
+              <li>Find and prevent fraud</li>
+          </ul>
+          
+          <h2>Sharing Your Information</h2>
+          <p>We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information unless we provide users with advance notice. This does not include website hosting partners and other parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential. We may also release information when it's release is appropriate to comply with the law, enforce our site policies, or protect ours or others' rights, property or safety.</p>
+          
+          <h2>Cookies</h2>
+          <p>We use cookies to enhance your experience on our site. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your web browser (if you allow) that enables the site's or service provider's systems to recognize your browser and capture and remember certain information. You can choose to disable cookies through your individual browser options.</p>
+          
+          <h2>Third-Party Links</h2>
+          <p>Occasionally, at our discretion, we may include or offer third-party products or services on our website. These third-party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.</p>
+          
+          <h2>Changes to This Privacy Policy</h2>
+          <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+          
+          <h2>Contact Us</h2>
+          <p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:support@webhostingadvisor.com">support@webhostingadvisor.com</a></p>
+      </div>
+  </section>
+  
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Web Hosting Advisor. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="Disclaimer.html">Disclaimer </a>
+            </nav>
+        </div>
+    </footer>
+    <script src="algorithm.js"></script>
+</body>
+
+</html>

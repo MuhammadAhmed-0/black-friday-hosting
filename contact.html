@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Base header styling */
+        header {
+            background-color: #003366;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            /* Increased padding for a larger header */
+            position: relative;
+            z-index: 10;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .logo-image {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            color: bisque;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-item {
+            margin-right: 30px;
+        }
+
+        .nav-link {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            color: bisque;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            color: #66B2FF;
+            /* Tomato color for hover effect */
+            text-shadow: none;
+        }
+
+        /* Menu Toggle Button for mobile */
+        .menu-toggle {
+            display: none;
+            font-size: 30px;
+            background: none;
+            border: none;
+            color: bisque;
+            cursor: pointer;
+        }
+
+        /* Base styling for About Us container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .disclaimer h2 {
+            text-align: center;
+            color: #003366;
+            font-size: 26px;
+        }
+
+        .disclaimer h2 {
+            color: #003366;
+            font-size: 24px;
+        }
+
+        .footer-nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        footer {
+            background-color: #003366;
+            color: bisque;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header .nav-list {
+                display: none;
+                flex-direction: column;
+            }
+
+            .menu-toggle {
+                display: inline-block;
+            }
+
+            .menu-toggle.active+.nav-list {
+                display: flex;
+            }
+
+            .disclaimer h1,
+            .disclaimer h2,
+            .disclaimer p {
+                text-align: left;
+                padding: 0 10px;
+            }
+
+            .nav-list .nav-item {
+                margin-right: 15px;
+            }
+
+            .footer-nav {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-text {
+                font-size: 16px;
+            }
+
+            .disclaimer h1 {
+                font-size: 1.8rem;
+            }
+
+            .disclaimer h2 {
+                font-size: 1.2rem;
+            }
+
+            .nav-list .nav-item {
+                margin-right: 10px;
+            }
+
+            footer p,
+            .footer-nav a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/Logo.png" alt="Logo" class="logo-image">
+                <span class="logo-text">Webhosting Advisor</span>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="black-friday-hosting-deals.html" class="nav-link">Black Friday Deals</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Main contact us Section -->
+    <section class="contact-us">
+      <div class="container">
+          <h1>Contact Us</h1>
+          <p>We at Web Hosting Advisor are always here to help you with any questions, concerns, or feedback you may have. Our goal is to provide you with the best possible service and support, ensuring that your experience with us is smooth and satisfactory.</p>
+          
+          <h2>Get in Touch</h2>
+          <p>If you have any inquiries about our services, need assistance with your web hosting choices, or simply want to share your thoughts, please do not hesitate to reach out to us. We value your input and are committed to responding to your queries promptly.</p>
+          
+          <p>You can contact us through the following methods:</p>
+          <ul>
+              <li><strong>Email:</strong> For general inquiries, please email us at <a href="mailto:support@webhostingadvisor.com">support@webhostingadvisor.com</a>. We strive to respond to all emails within 24 hours.</li>
+          </ul>
+          
+          <h2>Follow Us</h2>
+          <p>Stay connected with us through our social media channels. We regularly post updates, tips, and news related to web hosting and technology. Follow us to stay informed and engaged:</p>
+          <ul>
+              <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+              <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+              <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+          </ul>
+          
+          <h2>Customer Support</h2>
+          <p>Our customer support team is dedicated to helping you with any issues or questions you may have. Whether you need technical support, have billing inquiries, or need guidance on choosing the right hosting plan, we are here to assist you. Our knowledgeable and friendly support staff are just a call or email away.</p>
+          
+          <h2>Feedback</h2>
+          <p>Your feedback is invaluable to us. It helps us improve our services and better meet your needs. If you have any suggestions, comments, or concerns, please let us know. We appreciate your input and are always looking for ways to enhance your experience with Web Hosting Advisor.</p>
+          
+          <p>Thank you for choosing Web Hosting Advisor. We look forward to hearing from you and assisting you with all your web hosting needs.</p>
+      </div>
+  </section>
+  
+  
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Web Hosting Advisor. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="Disclaimer.html">Disclaimer </a>
+                <a href="privacy.html">Privacy Policy</a>
+              
+            </nav>
+        </div>
+    </footer>
+    <script>
+        //for toggle menu
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+
+    </script>
+</body>
+
+</html>

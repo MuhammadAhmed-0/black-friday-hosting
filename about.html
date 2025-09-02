@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Web Hosting Advisor</title>
+    <style>
+        /* Base header styling */
+        header {
+            background-color: #003366;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            /* Increased padding for a larger header */
+            position: relative;
+            z-index: 10;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .logo-image {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            color: bisque;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-item {
+            margin-right: 30px;
+        }
+
+        .nav-link {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            color: bisque;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            color: #66B2FF;
+            /* Tomato color for hover effect */
+            text-shadow: none;
+        }
+
+        /* Menu Toggle Button for mobile */
+        .menu-toggle {
+            display: none;
+            font-size: 30px;
+            background: none;
+            border: none;
+            color: bisque;
+            cursor: pointer;
+        }
+
+        /* Base styling for About Us container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .about-us h1 {
+            text-align: center;
+            color: #003366;
+            font-size: 26px;
+            ;
+        }
+
+        .about-us h2 {
+            color: #003366;
+            font-size: 24px;
+        }
+
+        .footer-nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        footer {
+            background-color: #003366;
+            color: bisque;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header .nav-list {
+                display: none;
+                flex-direction: column;
+            }
+
+            .menu-toggle {
+                display: inline-block;
+            }
+
+            .menu-toggle.active+.nav-list {
+                display: flex;
+            }
+
+            .about-us h1,
+            .about-us h2,
+            .about-us p {
+                text-align: left;
+                padding: 0 10px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-list .nav-item {
+                margin-right: 15px;
+            }
+
+            .footer-nav {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-text {
+                font-size: 16px;
+            }
+
+            .about-us h1 {
+                font-size: 1.8rem;
+            }
+
+            .about-us h2 {
+                font-size: 1.2rem;
+            }
+
+            .nav-list .nav-item {
+                margin-right: 10px;
+            }
+
+            footer p,
+            .footer-nav a {
+                font-size: 14px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/Logo.png" alt="Logo" class="logo-image">
+                <span class="logo-text">Webhosting Advisor</span>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="black-friday-hosting-deals.html" class="nav-link">Black Friday Deals</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Main About Us Section -->
+    <section class="about-us">
+        <div class="container">
+            <h2 style="text-align: center;">About Us</h2>
+            <p>At Web Hosting Advisor, we are committed to providing accurate, in-depth, and easy-to-understand advice
+                on web hosting options for businesses and individuals. Our aim is to simplify the complex world of
+                hosting, ensuring you have the knowledge to make informed decisions.</p>
+            <h2>Our Mission</h2>
+            <p>To empower users with reliable insights, allowing them to choose the best web hosting solutions that
+                align with their needs and goals. We believe in transparency, thorough research, and a customer-first
+                approach.</p>
+            <h2>Our Values</h2>
+            <ul>
+                <li><strong>Transparency:</strong> We provide honest reviews and clear comparisons.</li>
+                <li><strong>Trustworthiness:</strong> All recommendations are backed by extensive research.</li>
+                <li><strong>Customer Focus:</strong> Your needs drive our content and recommendations.</li>
+            </ul>
+            <h2>Why Choose Us?</h2>
+            <p>Our team is passionate about hosting and technology. We stay updated on the latest industry trends and
+                are dedicated to helping you understand the hosting world with ease. Choosing Web Hosting Advisor means
+                choosing a guide that genuinely cares about your online success.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Web Hosting Advisor. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="Disclaimer.html">Disclaimer </a>
+                <a href="privacy.html">Privacy Policy</a>
+            </nav>
+        </div>
+    </footer>
+    <script>//for toggle menu
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
